@@ -14,7 +14,6 @@ export default function SelectorUI({ cityInput, setCityInput }: SelectorUIProps)
         setCityInput(event.target.value);
     };
 
-    const [cityInput, setCityInput] = useState('');
     return (
         <FormControl fullWidth>
             <InputLabel id="city-select-label">Ciudad</InputLabel>
