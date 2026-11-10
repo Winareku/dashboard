@@ -5,6 +5,7 @@ import AlertUI from './components/AlertUI';
 import SelectorUI from './components/SelectorUI';
 
 function App() {
+    const [cityInput, setCityInput] = useState('');
     return (
         <Grid container spacing={5} sx={{ justifyContent: 'center', alignItems: 'center' }}>
 
@@ -21,7 +22,7 @@ function App() {
 
             {/* Selector */}
             <Grid size={{ xs: 12, md: 3 }}>
-              <SelectorUI />
+              <SelectorUI cityInput={cityInput} setCityInput={setCityInput} />
             </Grid>
 
             {/* Indicadores */}
